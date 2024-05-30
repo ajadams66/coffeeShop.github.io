@@ -1,0 +1,37 @@
+{% include "header.html" %}
+
+<!-- Page Header-->
+<header class="masthead" style="background-image: url('{{post.img_url}}')" xmlns="http://www.w3.org/1999/html">
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="post-heading">
+          <h1>{{ post.name }}</h1>
+          <h2 class="subheading">{{ post.location }}</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Post Content -->
+<article>
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <a href="{{ post.map_url}}">URL to location </a> </br>
+        Seats: {{ post.seats }} </br>
+        Restrooms: {{ post.has_toilet}}</br>
+        Wifi: {{ post.has_wifi}}</br>
+        Electrical_outlet: {{ post.has_sockets}}</br>
+        Accept Calls: {{post.can_take_calls}}</br>
+        Cup of Coffee price: {{post.coffee_price}}
+
+        <div class="d-flex justify-content-end mb-4">
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+
+{% include "footer.html" %}

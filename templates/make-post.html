@@ -1,0 +1,14 @@
+{% include "header.html" %}
+{% from 'bootstrap5/form.html' import render_form %}
+{% block title %}Add Cafe{% endblock %}
+
+{% block content %}
+<div class="content">
+    <span class="subheading"
+            >Thanks for updating this information!</span
+          >
+    <h1 class="heading">Add a Cafe</h1>
+    {{ render_form(form) }}
+</div>
+{% include "footer.html" %}
+{% endblock %}
