@@ -11,7 +11,7 @@ from flask_ckeditor import CKEditor, CKEditorField
 from flask_wtf import FlaskForm
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = '6BYkEf5A6O6donzWlSihBXox90C0sKR3bsfwfawsfz2'
+app.config['SECRET_KEY'] = "Your Secret Key"
 Bootstrap5(app)
 
 
